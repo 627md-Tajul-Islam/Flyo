@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2% 5%;
+}
+
+nav ul {
+  display: flex;
+  gap: 5%;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 15%;
+}
+
+.info-img img {
+  width: 100%;
+}
+
+#email {
+    padding: 1%;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 1% 5%;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+#productive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15%;
+    padding: 5%;
+    background-color: hsl(240, 75%, 98%);
+}
+
+.kyle {
+    border-radius: 50%;
+    width: 50px;
+
+}
+
+.quote {
+    background-color: white;
+    width: 350px;
+    padding: 3%;
+    border-radius: 7px;
+    margin-top: 5%;
+}
+
+.testimony-info {
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.how {
+    color: hsl(170, 45%, 43%);
+    text-decoration: underline;
+}
+
+#access {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 20%;
+   align-items: center;
+   padding: 5%;
+   background-color:hsl(238, 22%, 44%);
+   color: white;
+}
+
+#email {
+    width: 250px;
+}
+
+#access button {
+    border: 0;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+footer {
+    padding: 5%;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    text-align: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    text-align: left;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.contact-info i{
+    color: white;
+    padding: 5% 0;
+    font-size: 25px;
+}
+
+@media (max-width: 780px) {
+    body {
+        max-width: 100%;
+        text-align: center;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .quote {
+        padding: 0;
+    }
+    #productive {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    #access {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 5%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+}
